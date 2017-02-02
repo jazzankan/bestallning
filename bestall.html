@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="css/bestall.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<title>Beställning</title>
+</head>
+<body>
+  <div id="wrapper">
+  <div id="content">
+  <h1>Beställ/föreslå material</h1>
+  <hr>
+  <p>Här beställer du material för inköp eller inlån från andra bibliotek. För att kunna beställa behöver du vara registrerad som användare i 
+  bibliotekssystemet. Kontrollera också gärna att vi inte redan har det du söker – enklast via bibliotekets söktjänst <a href="http://primo-pmteu02.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?vid=SOH_main" target="_blank">SöderScholar</a>. Din beställning hanteras så här:</p>
+  <p><strong>Böcker</strong><br>
+  Biblioteket köper i huvudsak in på förslag. Om boken inte finns i elektroniskt så köper vi eller lånar in i tryckt format. För studenter gäller följande: om boken finns på ett bibliotek i Stockholmsområdet så vänder du dig dit för lån. Om boken endast finns utanför Stockholmsområdet så lånar vi in den till dig.</p>
+  <p><strong>Artiklar</strong><br>
+  Artiklar skickas per post till den adress som finns registrerad på ditt bibliotekskonto.</p>
+  <p>I bibliotekets mediaplan finns vår inköpspolicy beskriven. Läs mer om boklån från andra bibliotek och artikelkopior.</p>
+  <div id="auth">
+    <form id="authform" action="">
+    <p><strong>Logga in:</strong></p>
+    <label>Efternamn:</label>
+    <input type="text">
+    <label>Lånekortsnummer:</label>
+    <input type="text" name="kortnr" size="10" maxlength="10">
+    <input type="submit" value="Skicka">
+    </form>
+    </div>
+    <div id="main">
+    <p class="small">Välkommen Arne!</p>
+    <form id="mainform" action="">
+    <label><strong>Typ av beställning:</strong></label>
+    <p>
+      <label>
+        <input type="radio" name="RadioGroup1" value="bok" id="RadioGroup1_0">
+        Bok	</label>
+      <br>
+      <label>
+        <input type="radio" name="RadioGroup1" value="artikel" id="RadioGroup1_1">
+        Artikel</label>
+      <br>
+    </p>
+    <p class="bok">
+    <label>Författare*</label><br>
+    <input type="text">
+    </p>
+    <p class="bok">
+    <label>Titel*</label><br>
+    <input type="text">
+    </p>
+    <p class="artikel">
+    <label>Titel*</label><br>
+    <input type="text">
+    </p>
+    <p class="artikel">
+    <label>Författare*</label><br>
+    <input type="text">
+    </p>
+    <p class="artikel">
+    <label>Tidskrift*</label><br>
+    <input type="text">
+    </p>
+    <p class="bok">
+    <label>Förlag</label><br>
+    <input type="text">
+    </p>
+    <p class="bok">
+    <label>Tryckår</label><br>
+    <input type="text">
+    </p>
+    <p class="artikel">
+    <label>År*</label><br>
+    <input type="text">
+    </p>
+    <p class="artikel">
+    <label>Volym</label><br>
+    <input type="text">
+    </p>
+    <p class="artikel">
+    <label>Nummer</label><br>
+    <input type="text">
+    </p>
+    <p class="artikel">
+    <label>Sidor*</label><br>
+    <input type="text">
+    </p>
+    <p class="bok">
+    <label>ISBN</label><br>
+    <input type="text">
+    </p>
+    <p class="artikel">
+    <label>ISSN</label><br>
+    <input type="text">
+    </p>
+    <p class="bok">
+    <input type="checkbox" checked="checked">Jag önskar reservera boken 
+    <input type="checkbox">Bara ett förslag,behöver den inte just nu</p>
+    <p class="bradska"><input type="checkbox">Brådskande! <span class="aktuellt">Inte aktuellt efter: <input type="text" size="12" maxlength="12"></span>
+    </p>
+    <p class="format"><strong>Vilket format föredrar du?</strong></p>
+    <p class="format">
+      <label>
+        <input type="radio" name="RadioGroup2" value="elektroniskt" id="RadioGroup2_0">
+        E-bok, i mån av tillgång, och kan då få den snabbare</label>
+      <br>
+      <label>
+        <input type="radio" name="RadioGroup2" value="tryckt" id="RadioGroup2_1">
+        Tryckt bok</label>
+      <br>
+      <label>
+        <input type="radio" name="RadioGroup2" value="egalt" id="RadioGroup2_2">
+        Spelar mindre roll</label>
+      <br>
+    </p>
+    <p class="betala"><strong>Lån från icke nordiska länder kostar 150 kr. Är du beredd att betala?</strong></p>
+    <p class="betala">
+      <label>
+        <input type="radio" name="RadioGroup3" value="radio" id="RadioGroup3_0">
+        Ja</label>
+      <br>
+      <label>
+        <input type="radio" name="RadioGroup3" value="radio" id="RadioGroup3_1">
+        Nej</label>
+      <br>
+    </p>
+    <p class="meddelande"><strong>Meddelande till biblioteket:</strong><br>
+    <textarea></textarea></p>
+    </form>
+      </div>
+    </div>
+  </div>
+  <script src="bestscripts/bestall.js"></script>
+</body>
+</html>	

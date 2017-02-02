@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: .9rem;				
+}
+#wrapper{
+	width: 640px;
+	border: 2px solid #D4D4D4;
+}
+#content{
+	margin: 20px;
+}
+
+hr{
+	color:#D4D4D4;
+}
+#main{
+	display: none;
+}
+
+.small{
+	font-size: .75rem;
+	font-weight: 600;
+	color: #2E7443;
+}
+
+.leftcol{
+	width: 50%;
+	float:left;
+}
+
+.rightcol{
+	width: 50%
+	float:right;
+}
+
+input{
+	margin-right: 10px;
+}
+
+.bok{
+	display: none;
+}
+
+.artikel{
+	display:none;
+}
+
+.format{
+	display:none;
+}
+
+.betala{
+	display: none;
+}
+
+.meddelande{
+	display:none;
+}
+
+.bradska{
+	display:none;
+}
+
+textarea{
+	width: 240px;
+}
+
+.aktuellt{
+	margin-left:25px;
+}
